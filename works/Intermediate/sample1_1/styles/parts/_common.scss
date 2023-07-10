@@ -1,0 +1,83 @@
+@use "../globals" as *;
+
+body {
+  font-family: 'Noto Sans', 'Noto Sans JP', 'Source Serif Pro', sans-serif;
+  color: $cBlack;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $cBlack;
+}
+.ta-le {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.resFlex {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.content-width {
+  width: 94%;
+  max-width: $contentMaxWidth;
+  margin: 0 auto;
+  @include mq(md) {
+    width: 96%;
+  }
+}
+
+// margin-bottom
+.mb-hsm {
+  margin-bottom: 5px;
+}
+
+.mb-sm {
+  margin-bottom: 15px !important;
+}
+
+.mb-md {
+  margin-bottom: 32px !important;
+}
+
+.mb-lr {
+  margin-bottom: 45px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+// font
+.font-sm {
+  font-size: 12px;
+}
+.font-md {
+  font-size: 14px;
+}
+.font-lr {
+  font-size: 16px;
+}
+.font-lg {
+  font-size: 36px;
+}
+

@@ -1,0 +1,140 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// header 
+.header {
+    position: fixed;
+    background-color: $cWhite;
+    width: 100%;
+    &__logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__navWrapper {
+        background-color: $cBlack;
+        height: 38px;
+        line-height: 38px;
+        width: 100%;
+    }
+    &__ul {
+        width: 470px;
+        justify-content: space-between;
+
+    }
+    &__a {
+        color: $cWhite;
+    }
+}
+
+// pickUp 
+.pickUp {
+    padding-top: 140px;
+    &__article {
+        @include mq(md) {
+            width: 32%;
+        }
+    }
+    &__text {
+        font-weight: bold;
+    }
+}
+
+// readmore 
+.readWrapper {
+    text-align: center;
+}
+.readmore {
+    display: inline-block;
+    transition: all 0.3s;
+    &::after {
+        content: '';
+        width: auto;
+        height: 1px;
+        background-color: $cBlack;
+        display: block;
+        transition: all 0.2s;
+    }
+    &:hover {
+        &::after {
+            transform: translateY(4px);
+            opacity: 0;
+        }
+        
+    }
+    
+}
+
+
+// main 
+.main {
+    @include mq(md) {
+        width: 65%;
+    }
+    .ml {
+        margin-left: 15px;
+    }
+    &__text {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+// aside 
+.aside {
+    @include mq(md) {
+        width: 30%;
+        padding-right: 25px;
+    }
+    &__proImg {
+        width: 130px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__li {
+        border-top: 1px solid $cBlack;
+        padding: 20px;
+    }
+    &__li:last-child {
+        border-bottom: 1px solid $cBlack;
+    }
+}
+
+// footer 
+.footer {
+    background-color: $cBgGray;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    section {
+        @include mq(md) {
+            width: 30%;
+        }
+    }
+    &__abLi {
+        position: relative;
+        padding-left: 13px;
+    }
+    &__abA::before {
+        content: '';
+        border-style: solid;
+        border-width: 6px 0 6px 8px;
+        border-color: transparent transparent transparent $cBlack;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -6px;
+    }
+    &__bLi {
+        border-top: 1px solid $cBlack;
+        padding: 15px;
+    }
+    &__bLi:last-child{
+        border-bottom: 1px solid $cBlack;
+    }
+    &__copy {
+        text-align: center;
+    }
+}
