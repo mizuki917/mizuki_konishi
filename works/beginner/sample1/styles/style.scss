@@ -1,0 +1,97 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// header 
+.header {
+    &__inner {
+        padding: 10px 0;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 120px;
+        display: block;
+    }
+    &__nav {
+        line-height: 40px;
+    }
+    &__ul {
+        padding: 0;
+    }
+    &__li {
+        &:nth-child(2) {
+            margin-left: 30px;
+        }
+    }
+    &__img {
+        object-fit: cover;
+        height: 100vh;
+        width: 100%;
+        @include mq(md) {
+            height: 600px;
+        }
+    }
+    &__a {
+        text-decoration: none;
+        color: $cBlack;
+        &:hover {
+            color: $cBgGray;
+            cursor: pointer;
+        }
+    }
+}
+
+// main 
+.main {
+    margin-bottom: 100px;
+    section {
+        text-align: center;
+    }
+    &__h1 {
+        margin: 0 auto;
+        border-bottom: 1px solid $cBlack;
+        display: inline-block;
+        margin-bottom: 55px;
+    }
+
+    // about
+    &__aboutImg {
+        width: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    &__aboutContainer {
+        @include mq(md) {
+            width: 560px;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+    &__aboutInner {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    // bicycle
+    &__bicycleContainer {
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__bicycleInner {
+        margin: 0 auto;
+        @include mq(md) {
+            width: 31.5%;
+        }
+    }
+}
+
+// footer 
+.footer {
+    &__copy {
+        font-size: 12px;
+        font-weight: 200;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}

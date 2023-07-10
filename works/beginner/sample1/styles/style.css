@@ -1,0 +1,147 @@
+body {
+  font-family: "Noto Sans", "Noto Sans JP", "Source Serif Pro", sans-serif;
+  color: rgb(70, 70, 70);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+.ta-le {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.content-width {
+  width: 92%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 601px) {
+  .content-width {
+    width: 93.5%;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 10px !important;
+}
+
+.mb-md {
+  margin-bottom: 27px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 16px;
+}
+
+.font-lr {
+  font-size: 18px;
+}
+
+.font-lg {
+  font-size: 36px;
+}
+
+.header__inner {
+  padding: 10px 0;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 120px;
+  display: block;
+}
+.header__nav {
+  line-height: 40px;
+}
+.header__ul {
+  padding: 0;
+}
+.header__li:nth-child(2) {
+  margin-left: 30px;
+}
+.header__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+@media screen and (min-width: 601px) {
+  .header__img {
+    height: 600px;
+  }
+}
+.header__a {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+}
+.header__a:hover {
+  color: #888887;
+  cursor: pointer;
+}
+
+.main {
+  margin-bottom: 100px;
+}
+.main section {
+  text-align: center;
+}
+.main__h1 {
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(70, 70, 70);
+  display: inline-block;
+  margin-bottom: 55px;
+}
+.main__aboutImg {
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 601px) {
+  .main__aboutContainer {
+    width: 560px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+.main__aboutInner {
+  width: 400px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 601px) {
+  .main__bicycleContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.main__bicycleInner {
+  margin: 0 auto;
+}
+@media screen and (min-width: 601px) {
+  .main__bicycleInner {
+    width: 31.5%;
+  }
+}
+
+.footer__copy {
+  font-size: 12px;
+  font-weight: 200;
+  text-align: center;
+  padding-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// main visual
+.mv {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    @include mq(md) {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 4%;
+        height: auto;
+        
+    }
+}
+
+// header
+.header {
+    display: flex;
+    &__a {
+        text-decoration: none;
+        color: $cBlack;
+    }
+    &__ul {
+        width: 180px;
+        margin-left: 50px;
+    }
+}
+
+.main {
+    section {
+        position: relative;
+        flex-wrap: wrap;
+    }
+    &__img, &__inner {
+        @include mq(md) {
+            width: 50%;
+            object-fit: cover;
+            height: 50%;
+        }
+    } 
+    &__inner {
+        @include mq(md) {
+            padding: 14% 7% 0;
+        }
+    }
+}
+
+.order1 {
+    @include mq(md) {
+        order: 1;
+    }
+}
+
+.order2 {
+    @include mq(md) {
+        order: 2;
+    }
+    
+}

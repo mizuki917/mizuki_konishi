@@ -1,0 +1,112 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// header 
+.header {
+    max-width: $contentMaxWidth;
+    padding: 15px 10px;
+    margin: 0 auto;
+  &__logo {
+    width: 180px;
+    margin-top: 45px;
+  }
+}
+
+// main 
+.main {
+
+    // main visual
+    &__visual {
+        margin: 0 auto;
+    }
+
+    // index
+    &__index {
+        background-color: $cBgGray;
+        padding-bottom: 20px;
+    }
+    &__h1 {
+        text-align: center;
+        padding-top: 35px;
+        @include mq(lg) {
+            padding-top: 50px;
+        }
+    }
+    &__ol {
+        border: 1px solid $cBlack;
+        padding: 30px;
+        margin: 20px;
+        @include mq(lg) {
+            margin: 20px 60px 40px;
+        }
+    }
+    &__li {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    // img 
+    // &__imgInner {
+    //     @include mq(lg) {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         justify-content: space-between;
+    //     }
+    // }
+    &__img {
+        margin: 0 auto;
+        @include mq(lg) {
+            width: 49%;
+            margin: 0;
+        }
+    }
+
+    // detail
+    &__detail {
+        background-color: $cBgGray;
+        padding: 0 20px 35px;
+    }
+    &__detailContainer {
+        @include mq(lg) {
+            width: 680px;
+            margin: 0 auto;
+        }
+    }
+    &__detailInner {
+        &:first-child {
+            height: 190px;
+            border-bottom: 1px solid $cBlack;
+            @include mq(lg) {
+                border-bottom: none;
+                border-right: 1px solid $cBlack;
+                width: 35%;
+                height: 150px;
+            }
+        }
+        &:last-child {
+            height: 150px;
+            @include mq(lg) {
+                width: 65%;
+                padding-left: 40px;
+            }
+        }
+    }
+    &__dd {
+        margin-bottom: 10px;
+    }
+    &__a {
+        color: $cBlack;
+        &:hover {
+            color: $cHover;
+        }
+    }
+}
+
+// footer 
+.footer {
+    &__copy {
+        text-align: center;
+        font-size: 11px;
+        padding-bottom: 15px;
+    }
+}

@@ -1,0 +1,177 @@
+body {
+  color: rgb(29, 29, 29);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fixed-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+  }
+}
+
+.ly, .h-ly {
+  padding: 0 18px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .cw {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .h-ly {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 20px !important;
+}
+@media screen and (min-width: 768px) {
+  .mb-sm {
+    margin-bottom: 30px !important;
+  }
+}
+
+.mb-md {
+  margin-bottom: 40px !important;
+}
+
+.mb-lr {
+  margin-bottom: 60px !important;
+}
+
+.mb-lg {
+  margin-bottom: 90px !important;
+}
+
+.pb-sm {
+  padding-bottom: 15px;
+}
+
+.font-sm, .font-nav {
+  font-size: 12px;
+}
+
+.font-md, .main-title {
+  font-size: 16px;
+}
+
+.font-lr, .sub-title {
+  font-size: 20px;
+}
+
+.font-lg {
+  font-size: 27px;
+}
+
+.main-title {
+  font-family: "Anuphan", sans-serif;
+}
+
+.sub-title {
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .sub-title {
+    font-size: 24px;
+  }
+}
+
+.font-nav {
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+
+.bb {
+  border-bottom: 1px solid #f0eded;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+  }
+}
+
+.mv {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .mv {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 4%;
+    height: auto;
+  }
+}
+
+.header {
+  display: flex;
+}
+.header__a {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+}
+.header__ul {
+  width: 180px;
+  margin-left: 50px;
+}
+
+.main section {
+  position: relative;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .main__img, .main__inner {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__inner {
+    padding: 14% 7% 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order1 {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order2 {
+    order: 2;
+  }
+}/*# sourceMappingURL=style.css.map */

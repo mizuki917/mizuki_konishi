@@ -1,0 +1,48 @@
+@use "../globals" as *;
+
+body {
+  font-family: 'Noto Sans', 'Noto Sans JP', 'Source Serif Pro', sans-serif;
+  color: $cBlack;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+// margin-bottom
+.mb-sm {
+  margin-bottom: 20px !important;
+}
+
+.mb-md {
+  margin-bottom: 60px !important;
+}
+
+.mb-lr {
+  margin-bottom: 80px !important;
+}
+
+.mb-lg {
+  margin-bottom: 110px !important;
+}
+
+// font
+.font-sm {
+  font-size: 11px;
+}
+.font-md {
+  font-size: 14px;
+}
+.font-lr {
+  font-size: 20px;
+}
+.font-lg {
+  font-size: 32px;
+}
+

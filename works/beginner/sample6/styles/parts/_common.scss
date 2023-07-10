@@ -1,0 +1,122 @@
+@use "../globals" as *;
+
+body {
+  color: $cBlack;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+// flex 
+.fixed-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+// レイアウト
+.ly {
+  padding: 0 18px;
+  margin: 0 auto;
+}
+
+.cw {
+  @include mq(md) {
+    max-width: $contentWidth;
+    margin: 0 auto;
+  }
+}
+
+.h-ly {
+  @extend .ly;
+  @include mq(md) {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+// margin-bottom
+.mb-sm {
+  margin-bottom: 20px !important;
+  @include mq(md) {
+    margin-bottom: 30px !important;
+  }
+}
+
+.mb-md {
+  margin-bottom: 40px !important;
+}
+
+.mb-lr {
+  margin-bottom: 60px !important;
+}
+
+.mb-lg {
+  margin-bottom: 90px !important;
+}
+
+// padding-bottom
+.pb-sm {
+  padding-bottom: 15px;
+}
+
+// font
+.font-sm {
+  font-size: 12px;
+}
+.font-md {
+  font-size: 16px;
+}
+.font-lr {
+  font-size: 20px;
+}
+.font-lg {
+  font-size: 27px;
+}
+
+.main-title {
+  font-family: 'Anuphan', sans-serif;
+  @extend .font-md
+}
+
+.sub-title {
+  font-weight: 400;
+  @extend .font-lr;
+  @include mq(md) {
+    font-size: 24px;
+  }
+}
+
+.font-nav {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  @extend .font-sm
+}
+
+
+.bb {
+  border-bottom: 1px solid $cBgGray;
+}
+
+// flex 
+.flex {
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+

@@ -1,0 +1,12 @@
+$breakpoints: (
+  // 835px以上のタブレットやモニタで適用
+  'md': 'screen and (min-width: 835px)',
+  // 1025px以上のタブレットやモニタで適用
+  'lg': 'screen and (min-width: 1025px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

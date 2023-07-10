@@ -1,0 +1,162 @@
+body {
+  font-family: "Noto Sans", "Noto Sans JP", "Source Serif Pro", sans-serif;
+  color: rgb(70, 70, 70);
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.ciw {
+  margin: 0 auto;
+  width: 92%;
+  max-width: 760px;
+}
+@media screen and (min-width: 1025px) {
+  .ciw {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.flex {
+  flex-direction: column;
+  display: flex;
+}
+@media screen and (min-width: 1025px) {
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 20px !important;
+}
+
+.mb-md {
+  margin-bottom: 30px !important;
+}
+
+.mb-lr {
+  margin-bottom: 60px !important;
+}
+
+.mb-lg {
+  margin-bottom: 110px !important;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 20px;
+}
+
+.font-lr {
+  font-size: 20px;
+}
+
+.font-lg {
+  font-size: 24px;
+}
+
+.header {
+  max-width: 1015px;
+  padding: 15px 10px;
+  margin: 0 auto;
+}
+.header__logo {
+  width: 180px;
+  margin-top: 45px;
+}
+
+.main__visual {
+  margin: 0 auto;
+}
+.main__index {
+  background-color: #f0eded;
+  padding-bottom: 20px;
+}
+.main__h1 {
+  text-align: center;
+  padding-top: 35px;
+}
+@media screen and (min-width: 1025px) {
+  .main__h1 {
+    padding-top: 50px;
+  }
+}
+.main__ol {
+  border: 1px solid rgb(70, 70, 70);
+  padding: 30px;
+  margin: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .main__ol {
+    margin: 20px 60px 40px;
+  }
+}
+.main__li {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.main__img {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1025px) {
+  .main__img {
+    width: 49%;
+    margin: 0;
+  }
+}
+.main__detail {
+  background-color: #f0eded;
+  padding: 0 20px 35px;
+}
+@media screen and (min-width: 1025px) {
+  .main__detailContainer {
+    width: 680px;
+    margin: 0 auto;
+  }
+}
+.main__detailInner:first-child {
+  height: 190px;
+  border-bottom: 1px solid rgb(70, 70, 70);
+}
+@media screen and (min-width: 1025px) {
+  .main__detailInner:first-child {
+    border-bottom: none;
+    border-right: 1px solid rgb(70, 70, 70);
+    width: 35%;
+    height: 150px;
+  }
+}
+.main__detailInner:last-child {
+  height: 150px;
+}
+@media screen and (min-width: 1025px) {
+  .main__detailInner:last-child {
+    width: 65%;
+    padding-left: 40px;
+  }
+}
+.main__dd {
+  margin-bottom: 10px;
+}
+.main__a {
+  color: rgb(70, 70, 70);
+}
+.main__a:hover {
+  color: #6a6a68;
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: 11px;
+  padding-bottom: 15px;
+}/*# sourceMappingURL=style.css.map */

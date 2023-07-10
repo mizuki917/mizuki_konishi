@@ -1,0 +1,70 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// main 
+.main {
+    &__h2 {
+        border-bottom: 2px solid $cBgGray;
+    }
+    &__dl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__dt {
+        width: 93%;
+        @include mq(md) {
+            width: 92%;
+        }
+    }
+    &__dd {
+        width: 7%;
+        @include mq(md) {
+            width: 8%;
+        }
+    }
+    &__ol {
+        padding-left: 20px;
+    }
+    &__a {
+        text-decoration: none;
+    }
+    &__btn {
+        margin: 0 auto;
+        display: block;
+        width: 230px;
+        height: 60px;
+        background-color: $cWhite;
+        border: 1px solid $cBlack;
+        cursor: pointer;
+    }
+    &__img {
+        @include mq(md) {
+            width: 50%;
+            height: 700px;
+            object-fit: cover;
+        }
+    }
+    &__recipe {
+        @include mq(md) {
+            width: 50%;
+            padding: 3% 5%;
+        }
+    }
+}
+
+// footer 
+.footer {
+    &__a {
+        color: $cBlack;
+    }
+    &__ul {
+        display: flex;
+        margin: 0 auto;
+        width: 180px;
+        justify-content: space-between;
+    }
+    &__copy {
+        text-align: center;
+    }
+}
+

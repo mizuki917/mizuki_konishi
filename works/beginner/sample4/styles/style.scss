@@ -1,0 +1,66 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// main 
+.main {
+
+    // メインビジュアル
+    &__visual {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    // レシピ
+    &__h1, &__p {
+        text-align: center;
+    }
+    &__p {
+        padding: 0 20px;
+    }
+    &__ul {
+        width: 100%;
+        @include mq(md) {
+            display: flex;
+        }
+    }
+    &__li {
+        @include mq(md) {
+            width: 34%;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    &__button {
+        background-color: $cWhite;
+        border: 1px solid $cBlack;
+        width: 230px;
+        height: 60px;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+    }
+    &__a {
+        text-decoration: none;
+    }
+}
+
+// footer 
+.footer {
+    &__ul {
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__a {
+        color: $cBlack;
+    }
+    &__copy {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
