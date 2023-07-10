@@ -1,0 +1,257 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// header 
+.header {
+    position: relative;
+    &__pcImg {
+        display: none;
+        @include mq(md) {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            height: 100vh;
+        }
+    }
+    &__spImg {
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
+        @include mq(md) {
+            display: none;
+        }
+    }
+    &__logo {
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        flex-direction: row-reverse;
+        @include mq(md) {
+            top: 53px;
+            right: 78px;
+        }
+    }
+    &__nav {
+        position: absolute;
+        top: 20px;
+        right:  97px;
+        @include mq(md) {
+            top: 53px;
+            right: 158px;
+        }
+    }
+    &__li {
+        margin-right: 22px;
+    }
+    &__btn {
+        background-color: $cBgGray;
+        padding: 9px 26px;
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        @include mq(md) {
+            bottom: 30px;
+            left: 40px;
+        }
+    } 
+    &__btn span {
+        padding: 29px 18px;
+        border: 1px solid $cWhite;
+    }
+}
+
+// main 
+.main {
+    padding-top: 80px;
+    background-color: $cMainBg;
+    &__news, &__create {
+        flex-direction: row-reverse;
+    }
+
+    &__newH1 {
+        margin-left: 20px;
+        @include mq(md) {
+            margin-left: 95px;
+        }
+    }
+    &__dl {
+        margin-top: 20px;
+        @include mq(md) {
+            margin-top: 80px;
+        }
+    }
+    &__dt {
+        border-right: 1px solid $cBlack;
+        padding: 14px 14px 14px 0;
+        @include mq(md) {
+            padding: 20px 32px 20px 0;
+        }
+    }
+    &__dd {
+        padding: 14px 0 14px 14px;
+        @include mq(md) {
+            padding: 20px 0 20px 32px;
+        }
+    }
+    &__dd:nth-of-type(3) {
+        border-left: 1px solid $cBlack;
+        @include mq(md) {
+            border-left: none;
+        }
+    }
+    &__dd:nth-of-type(5) {
+        @include mq(md) {
+            border-left: 1px solid $cBlack;;
+        }
+    }
+    &__dt:nth-of-type(4), &__dt:nth-of-type(5), &__dd:nth-of-type(4), &__dd:nth-of-type(5) {
+        display: none;
+        @include mq(md) {
+            display: block;
+        }
+    }
+
+    &__create, &__science {
+        @include mq(md) {
+            width: 70%;
+            max-width: 700px;
+        }
+    }
+    &__create {
+        position: relative;
+        padding-bottom: 20px;
+        @include mq(md) {
+            margin: 0 0 0 30%;
+        }
+    }
+    &__crH1 {
+        margin-left: 5px;
+        @include mq(md) {
+            margin-left: 10px;
+        }
+    }
+    &__subTitle {
+        display: none;
+        @include mq(md) {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    }
+    .crSubT {
+        @include mq(md) {
+            margin-left: 25px;
+        }
+    }
+    .scSubT {
+        @include mq(md) {
+            margin-left: 12px;
+        }
+    }
+    &__img {
+        width: 89%;
+        margin-top: 65px;
+        object-fit: cover;
+        @include mq(md) {
+            margin-top: 105px;
+        }
+    }
+    .textBox {
+        width: 55%;
+        height: 100px;
+        text-align: center;
+        color: $cWhite;
+        padding: 25px 0;
+    }
+    &__textBox1 {
+        background-color: $cTBYello;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__science {
+        position: relative;
+        @include mq(md) {
+            margin: 0 30% 0 0;
+        }
+    }
+    &__textBox2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $cTBWRed;
+    }
+    &__scH1 {
+        margin-right: 5px;
+    }
+
+    &__map {
+        width: 100%;
+    }
+}
+
+// footer 
+.footer {
+    background-color: $cBlack;
+    color: $cWhite;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    @include mq(md) {
+        padding-top: 80px;
+    }
+    &__wrapper, &__inner {
+        flex-direction: row-reverse;
+    }
+    &__wrapper {
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &__inner:last-child {
+        width: 15px;
+    }
+    .border::before {
+        content: '';
+        width: 13px;
+        height: 1px;
+        background-color: $cWhite;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    &__logo {
+        width: 40px;
+        height: 100px;
+        margin-left: 30px;
+        @include mq(md) {
+            margin-right: 60px;
+        }
+        // @include mq(lg) {
+        //     margin-right: 0;
+        // }
+    }
+    &__adress {
+        margin-left: 30px;
+        @include mq(md) {
+            margin-right: 40px;
+        }
+    }
+    &__ul {
+        @include mq(md) {
+            margin-right: 25px;
+        }
+    }
+    &__li {
+        margin-left: 8px;
+        @include mq(md) {
+            margin-right: 23px;
+        }
+    }
+    .ml {
+        margin-left: 10px;
+    }
+
+    &__copy {
+        font-size: 11px;
+        text-align: center;
+    }
+}

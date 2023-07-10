@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sample5</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__spImg" src="images/mainvisual-sp.jpg" alt="メイン画像">
+      <img class="header__pcImg" src="images/mainvisual-pc.jpg" alt="メイン画像">
+      <img class="header__logo" src="images/logo.svg" alt="ロゴ画像">
+      <nav class="header__nav">
+        <ul class="header__ul vw">
+          <li class="header__li"><a href="#news" class="header__a">お知らせ</a></li>
+          <li class="header__li"><a href="#create" class="header__a">商品のご紹介</a></li>
+          <li class="header__li"><a href="#map" class="header__a">店舗のご案内</a></li>
+        </ul>
+      </nav>
+      <a class="header__btn vw" href="#" target="_blank"><span>オンラインストアを見る</span></a>
+    </header>
+    <main class="main">
+      <div class="main__container content-width">
+        <section class="main__news flex mb-lg" id="news">
+          <p class="main__p vw font-md">News</p>
+          <h1 class="main__newH1 vw main-title">お知らせ</h1>
+
+          <dl class="main__dl vw">
+            <dt class="main__dt font-sm">2021.01.01</dt>
+            <dd class="main__dd font-lr">タイトルタイトルタイトルタイトル</dd>
+            <dt class="main__dt font-sm">2021.01.01</dt>
+            <dd class="main__dd font-lr">タイトルタイトルタイトルタイトル</dd>
+            <dt class="main__dt font-sm">2021.01.01</dt>
+            <dd class="main__dd font-lr">タイトルタイトルタイトルタイトル</dd>
+            <dt class="main__dt font-sm">2021.01.01</dt>
+            <dd class="main__dd font-lr">タイトルタイトルタイトルタイトル</dd>
+            <dt class="main__dt font-sm">2021.01.01</dt>
+            <dd class="main__dd font-lr">タイトルタイトルタイトルタイトル</dd>
+          </dl>
+        </section>
+        <section class="main__create flex mb-lg" id="create">
+          <div class="main__wrapper">
+            <h1 class="main__crH1 vw main-title">新しい価値観の創造</h1>
+            <p class="main__subTitle vw font-md crSubT">Create New Values</p>
+          </div>
+          <img class="main__img" src="images/products1.jpg" alt="クリエイト画像">
+          <p class="main__textBox1 textBox">
+            テキストテキスト <br>
+            テキストテキスト
+          </p>
+        </section>
+        <section class="main__science flex mb-lg">
+          <div class="main__wrapper">
+            <h1 class="main__scH1 vw main-title">科学と技術の調和</h1>
+            <p class="main__subTitle vw scSubT">Science & Technology</p>
+          </div>
+          <img class="main__img" src="images/products2.jpg" alt="サイエンス画像">
+          <p class="main__textBox2 textBox">
+            テキストテキスト <br>
+            テキストテキスト
+          </p>
+        </section>
+      </div>
+      <div id="map">
+        <iframe class="main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12966.291665684219!2d139.7233510911825!3d35.66289266148549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9d3c1c9187%3A0x48f9c248e9169cfe!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo!5e0!3m2!1sja!2sjp!4v1688074254395!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </main>
+    <footer class="footer font-md">
+      <div class="footer__wrapper flex content-widthFT">
+        <div class="footer__inner flex">
+          <img class="footer__logo" src="images/logo.svg" alt="ロゴ画像">
+          <p class="footer__adress vw">
+            〒１０６-００３２　東京都港区六本木５丁目××××× <br>
+            電話：
+            <a href="tel:０３-ＸＸＸＸ-ＸＸＸＸ">０３-ＸＸＸＸ-ＸＸＸＸ</a>
+          </p>
+          <ul class="footer__ul vw">
+            <li class="footer__li"><a href="#news" class="footer__a">お知らせ</a></li>
+            <li class="footer__li"><a href="#create" class="footer__a">商品のお知らせ</a></li>
+            <li class="footer__li"><a href="#map" class="footer__a">店舗のご案内</a></li>
+          </ul>
+        </div>
+        <div class="footer__inner ml">
+          <a class="footer__a vw" href="#" target="_blank">オンラインストアを見る</a>
+          <a class="footer__a border vw" href="mailto:xxxxx@xxx.xxx.com">お問い合わせ</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; SOUSAKU</p>
+    </footer>
+  </body>
+</html>

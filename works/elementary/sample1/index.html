@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>sample1</title>
+    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+  </head>
+  <body>
+    <header class="header flex content-width">
+      <img class="header__logo mb-sm" src="images/logo.svg" alt="ロゴ">
+      <nav class="header__nav">
+        <ul class="header__ul font-sm mb-sm">
+          <li class="header__li"><a href="#about" class="header__a">About</a></li>
+          <li class="header__li"><a href="#works" class="header__a">Works</a></li>
+          <li class="header__li"><a href="#news" class="header__a">News</a></li>
+          <li class="header__li"><a href="#contact" class="header__a">Contact</a></li>
+          <li class="header__li"><a href="https://www.instagram.com/" target="_blank" class="header__a"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <img class="main__sp mb-lg" src="images/mainvisual-sp.jpg" alt="メインイメージスマホ">
+      <img class="main__pc mb-lg" src="images/mainvisual-pc.jpg" alt="メインイメージpc">
+      <section class="main__about content-width" id="about">
+        <h1 class="main__h1 font-lg mb-lr">About</h1>
+        <p class="main__p font-md mb-md">Xxxxx Ashley</p>
+        <p class="main__p font-md mb-md">
+          2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan <br>
+          tel: 000-0000-0000 <br>
+          url: www.xxxxxx.jp <br>
+          mail: xxx@xxxxxx.jp 
+        </p>
+        <p class="main__p font-sm mb-lg">
+          プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+      </section>
+      <section class="main__work mb-lg content-width" id="works">
+        <h1 class="main__h1 font-lg mb-lr">Works</h1>
+        <ul class="main__ul flex">
+          <li class="main__img mb-md"><img src="images/works1.jpg" alt="work画像1"></li>
+          <li class="main__img mb-md"><img src="images/works2.jpg" alt="work画像2"></li>
+          <li class="main__img mb-md"><img src="images/works3.jpg" alt="work画像3"></li>
+          <li class="main__img mb-md"><img src="images/works4.jpg" alt="work画像4"></li>
+          <li class="main__img mb-md"><img src="images/works5.jpg" alt="work画像5"></li>
+          <li class="main__img mb-md"><img src="images/works6.jpg" alt="work画像6"></li>
+        </ul>
+      </section>
+      <section class="main__news mb-lg content-width" id="news">
+        <h1 class="main__h1 font-lg mb-lr">News</h1>
+        <dl class="main__dl font-sm flex">
+          <dt class="main__dt">2020.XX.XX</dt>
+          <dd class="main__dd">デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+          <dt class="main__dt">2020.XX.XX</dt>
+          <dd class="main__dd">ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+          <dt class="main__dt">2020.XX.XX</dt>
+          <dd class="main__dd">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+          <dt class="main__dt">2020.XX.XX</dt>
+          <dd class="main__dd">デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+          <dt class="main__dt">2020.XX.XX</dt>
+          <dd class="main__dd">【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </section>
+      <section class="main__contact content-width" id="contact">
+        <h1 class="main__h1 mb-lr">Contact</h1>
+        <form action="">
+          <label class="main__label" for="name">NAME</label>
+          <input class="main__input mb-sm" type="text" name="name" id="name">
+          <label class="main__label" for="mail">E-mail</label>
+          <input class="main__input mb-sm" type="email" name="email" id="mail">
+          <label class="main__label" for="message">MESSAGE</label>
+          <textarea class="main__input mb-md" name="message" id="message"></textarea>
+          <a href="#" class="main__btn mb-lg font-sm">送信</a>
+          
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copy">&copy; 2020 My Work</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/0ecacc871d.js" crossorigin="anonymous"></script>
+  </body>
+</html>

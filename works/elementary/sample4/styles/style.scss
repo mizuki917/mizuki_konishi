@@ -1,0 +1,225 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// header 
+.header {
+    @include mq(md) {
+        max-width: 1200px;
+        margin: 15px auto;
+    }
+    &__wrapper {
+        @include mq(md) {
+            width: 490px;
+        }
+    }
+    &__logo {
+        width: 80px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        @include mq(md) {
+            width: 100px;
+            margin: 0;
+        }
+    }
+    &__ul {
+        display: flex;
+        padding: 0;
+        width: 330px;
+        justify-content: space-between;
+        @include mq(md) {
+            margin-top: 12px;
+        }
+    }
+    &__a {
+        text-decoration: none;
+        color: $cBlack;
+    }
+    &__btn {
+        display: none;
+        @include mq(md) {
+            display: block;
+            background-color: $cBlack;
+            color: $cWhite;
+            width: 166px;
+            height: 78px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        @include mq(lg) {
+            width: 17%;
+            max-width: 200px;
+        }
+    }
+    .btnA:hover {
+        opacity: 0.8;
+    }
+}
+
+// main 
+.main {
+    &__img {
+        width: 100%;
+        height: 680px;
+        object-fit: cover;
+    }
+    &__border1 {
+        width: 40px;
+        height: 1px;
+        background-color: $cBlack;
+    }
+    &__newsInner {
+        @include mq(md) {
+            width: 33.5%;
+            height: 80px;
+            border-right: 1px solid $cBlack;
+            padding: 10px 15px;
+        }
+    }
+    &__newsInner:last-child {
+        @include mq(md) {
+            border-right: none;
+        }
+    }
+    &__newsInner:first-child {
+        @include mq(md) {
+            padding: 10px 0;
+        }
+    }
+    &__newsInnerIn {
+        display: flex;
+    }
+    &__newBox {
+        background-color: $cBlack;
+        color: $cWhite;
+        padding: 0 5px;
+        margin-left: 20px;
+    }
+
+    &__abWrapper {
+        @include mq(md) {
+            width: 36%;
+            margin-top: 150px;
+        }
+    }
+    &__aboutImg {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        @include mq(md) {
+            width: 55%;
+            height: 400px;
+        }
+    }
+    &__text {
+        line-height: 30px;
+    }
+
+    &__border2 {
+        width: 8px;
+        height: 1px;
+        background-color: $cBlack;
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+    &__bnWrapper {
+        @include mq(md) {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    &__bnInner {
+        @include mq(md) {
+            width: 46%;
+        }
+    }
+    &__bnInner:first-child {
+        margin-top: 100px;
+    }
+    &__bnInnerIn2 {
+        display: flex;
+    }
+    &__bnImg {
+        margin: 0 auto;
+    }
+    &__dl {
+        @include mq(md) {
+            flex-wrap: wrap;
+        }
+    }
+    &__dt {
+        @include mq(md) {
+            width: 15%;
+            margin-bottom: 10px;
+        }
+    }
+    &__dd {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        @include mq(md) {
+            width: 83%;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+    &__company {
+        position: relative;
+        @include mq(md) {
+            margin-bottom: 140px;
+        }
+    }
+    &__comWrapper {
+        background-color: $cWhite;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        @include mq(md) {
+            width: 55%;
+            padding: 80px 0;
+        }
+    }
+    &__comInner {
+        @include mq(md) {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    &__comImg {
+        height: 500px;
+        object-fit: cover;
+        @include mq(md) {
+            width: 55%;
+            height: 400px;
+            position: absolute;
+            top: 100px;
+            right: 0;
+        }
+    }
+    .ml {
+        @include mq(md) {
+            margin-left: 17%;
+        }
+    }
+    .mbn {
+        margin-bottom: 0;
+    }
+}
+
+// footer 
+.footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: $cWhite;
+    &__logo {
+        width: 80px;
+        @include mq(md) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    &__copy {
+        font-size: 10px;
+    }
+}

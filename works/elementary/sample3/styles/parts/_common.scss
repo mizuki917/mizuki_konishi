@@ -1,0 +1,88 @@
+@use "../globals" as *;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $cBlack;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.content-width {
+  width: 94%;
+  margin: 0 auto;
+  @include mq(md) {
+    max-width: $contentMaxWidth;
+  }
+}
+
+// margin-bottom
+.mb-sm {
+  margin-bottom: 10px !important;
+}
+
+.mb-md {
+  margin-bottom: 20px !important;
+}
+
+.mb-lr {
+  margin-bottom: 40px !important;
+}
+
+.mb-lg {
+  margin-bottom: 70px !important;
+}
+
+// font
+.font-sm {
+  font-size: 12px;
+}
+.font-md {
+  font-size: 13px;
+}
+.font-lr {
+  font-size: 16px;
+}
+.font-lg {
+  font-size: 22px;
+}
+
+.main-title {
+  @extend .font-lg;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cell1 {
+  width: 20%;
+}
+ 

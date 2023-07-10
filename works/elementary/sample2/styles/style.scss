@@ -1,0 +1,162 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// header 
+.header {
+    position: relative;
+    &__mainImg {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    &__logo {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
+
+// main 
+.main {
+    // &__wrapper {
+    //     @include mq(md) {
+    //         justify-content: space-between;
+    //     }
+    // }
+    &__speInner {
+        position: relative;
+        @include mq(md) {
+            width: 49%;
+        }
+    }
+    &__boxInner {
+        background-color: $cBlackBox;
+        color: $cWhite;
+        width: 280px;
+        height: 90px;
+        padding: 10px 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__fsImg {
+        height: 500px;
+        object-fit: cover;
+    }
+    &__a:hover {
+        opacity: 0.7; 
+    }
+    &__btn {
+        border: 1px solid $cBlack;
+        background-color: $cTp;
+        padding: 14px 35px;
+        cursor: pointer;
+        &:hover {
+            color: $cHvGray;
+            border: 1px solid $cHvGray;
+        }
+    }
+    &__fs {
+        position: relative;
+    }
+    &__fsInner {
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    &__container {
+        background-color: $cContainGray;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @include mq(md) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+    &__catalog, &__antique {
+        position: relative;
+    }
+    &__catImg, &__antImg {
+        @include mq(md) {
+            width: 48%;
+        }
+    }
+    &__catInner, &__antInner {
+        @include mq(md) {
+            width: 48%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__catInner {
+        @include mq(md) {
+            right: 0;
+        }
+    }
+    &__antInner {
+        @include mq(md) {
+            left: 0;
+        }
+    }
+    &__antImg {
+        @include mq(md) {
+            margin-left: 52%;
+        }
+    }
+}
+
+// footer 
+.footer {
+    padding-bottom: 30px;
+    &__container {
+        background-color: $cDarkBlue;
+    }
+    &__wrapper {
+        padding-top: 30px;
+        padding-bottom: 60px;
+        color: $cWhite;
+        @include mq(md) {
+            padding-top: 110px;
+            padding-bottom: 90px;
+        }
+    }
+    &__logoWrap {
+        @include mq(md) {
+            width: 32%;
+            margin-top: 50px;
+        }
+    }
+    &__logo {
+        margin: 0 auto;
+        @include mq(md) {
+            margin: 0;
+        }
+    }
+    &__copy {
+        margin-top: 30px;
+    }
+    &__inner {
+        @include mq(md) {
+            width: 32%;
+        }
+    }
+    &__ul, &__text {
+        line-height: 25px;
+    }
+    &__li::before {
+        content: '';
+        width: 4px;
+        height: 1px;
+        background-color: $cWhite;
+        transform: translateX(-5px);
+        display: inline-block;
+        margin-bottom: 3px;
+    }
+}
+

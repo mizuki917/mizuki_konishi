@@ -1,0 +1,155 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// header 
+.header {
+    justify-content: space-between;
+    width: 93%;
+    margin: 0 auto;
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        padding-top: 20px;
+        @include mq(md) {
+            margin: 0;
+            padding-top: 115px;
+            padding-bottom: 115px;
+        }
+    }
+    &__ul {
+        display: flex;
+        margin: 0 auto;
+        width: 260px;
+        justify-content: space-between;
+        @include mq(md) {
+            font-size: 15px;
+            width: 330px;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+    }
+    &__a {
+        text-decoration: none;
+        color: $cBlack;
+        &:hover {
+            color: $cHvGray;
+        }
+    }
+}
+
+// main 
+.main {
+    section {
+        width: 93%;
+        margin: 0 auto;
+    }
+    &__pc {
+        display: none;
+        @include mq(md) {
+            display: block;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+    &__sp {
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+        @include mq(md) {
+            display: none;
+        }
+    }
+    &__h1 {
+        text-align: center;
+    }
+    &__ul {
+        @include mq(md) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    &__img {
+        @include mq(md) {
+            width: 31%;
+        }
+    }
+    &__dl {
+        flex-wrap: wrap;
+    }
+    &__dt {
+        border-top: 1px solid $cBgGray;
+        padding: 0 20px;
+        padding-top: 20px;
+        @include mq(md) {
+            width: 20%;
+            padding: 15px 20px;
+        }
+    }
+    &__dd {
+        padding: 0 20px;
+        padding-bottom: 20px;
+        @include mq(md) {
+            width: 80%;
+            border-top: 1px solid $cBgGray;
+            padding: 15px 20px;
+        }
+    }
+    &__dt:last-of-type {
+        @include mq(md) {
+            border-bottom: 1px solid $cBgGray;
+        }
+    }
+    &__dd:last-child {
+        border-bottom: 1px solid $cBgGray;
+    }
+    &__input {
+        width: 100%;
+        border: 1px solid $cBgGray;
+        outline: none;
+        @include mq(md) {
+            display: inline-block;
+            width: 84%;
+        }
+    }
+    &__label {
+        @include mq(md) {
+            display: inline-block;
+            width: 15%;
+            vertical-align: top;
+        }
+    }
+    input {
+        height: 40px;
+    }
+    textarea {
+        height: 150px;
+    }
+    &__btn {
+        margin: 0 auto;
+        width: 200px;
+        height: 50px;
+        border: 1px solid $cBlack;
+        background-color: $cDarkBlue;
+        color: $cWhite;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        line-height: 48px;
+        cursor: pointer;
+        &:hover {
+            background-color: $cWhite;
+            color: $cBlack;
+        }
+    }
+}
+
+// footer 
+.footer {
+    padding: 10px;
+    background-color: $cDarkBlue;
+    &__copy {
+        color: $cWhite;
+        font-size: 11px;
+        text-align: center;
+    }
+}
