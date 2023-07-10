@@ -1,82 +1,115 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mizuki Konishi | Web designer and programmer</title>
     <meta name="description" content="ウェブデザイナー 、プログラマーMizuki Konishiのウェブサイト。This is website of web designer, programmer, Mizuki Konishi">
-    <!-- <script src="scripts/vendors/pace.js"></script> -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <header>
-        <div class="title-cover">
-            <img class="title_mb" src="images/title.jpg" alt="">
-            <img class="title_dt" src="images/title_dt.jpg" alt="">
-            <p>-Web designer and programmer-</p>
-        </div>
-        
-        <nav>
-            <ul>
-                <li class="item"><a href="#home">Home</a></li>
-                <li class="item"><a href="#work">Work</a></li>
-                <li class="item"><a href="#about">About</a></li>
-                <li class="item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="mobile-menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+  </head>
+  <body>
+    <header class="header flex content-width">
+      <div class="header__wrapper">
+        <img class="header__spLogo" src="images/title.jpg" alt="タイトル画像">
+        <img src="images/title_dt.jpg" alt="タイトル画像" class="header__pcLogo">
+        <p class="header__spText font-sm">-Web designer and programmer-</p>
+      </div>
+
+      <nav class="header__nav font-lr">
+        <ul class="header__ul flex">
+          <li class="header__li"><a class="header__a" href="#">Home</a></li>
+          <li class="header__li"><a class="header__a" href="#works">Works</a></li>
+          <li class="header__li"><a class="header__a" href="#about">About</a></li>
+          <li class="header__li"><a class="header__a" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__hMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="header__hMenuUl font-lr">
+        <a class="header__hMenuA" href="index.html"><li class="header__hMenuLi mb-md">Home</li></a>
+        <a class="header__hMenuA" href="#works"><li class="header__hMenuLi mb-md">Works</li></a>
+        <a class="header__hMenuA" href="#about"><li class="header__hMenuLi mb-md">About</li></a>
+        <a class="header__hMenuA" href="#contact"><li class="header__hMenuLi">Contact</li></a>
+      </ul>
     </header>
-    <main id="home">
-        <div class="main_box1">
-            <p>-Web designer <br> and <br>programmer-</p>
-        </div>
-        <div class="main_contents">
-            <article class="main_box2">
-                <img class="mobile_img" src="images/okami_mobile.jpg" alt="okami">
-                <img class="dt_img" src="images/okami.jpg" alt="okami">
-            </article>
-            <article id="work">
-                <h1>Work</h1>
-            </article>
-            <article id="about">
-                <h1>About</h1>
-                <p>動物やテクノロジーが好きで、ゲームをするのが趣味のWebデザイナー、プログラマー。</p>
-            </article>
-            <article id="contact">
-                <h1>Contact</h1>
-                <p>お問い合わせ、ご相談などはこちらから</p>
-                <a href=""></a>
-            </article>
-        </div>
-        <div class="main_box3">
-            <p>&copy; 2021 Mizuki Konishi</p>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2021 Mizuki Konishi</p>
-    </footer>
-    <div class="hm">
-        <nav>
-            <button class="hmbtn">
-            <ul>
-                <li class="item"><a href="#home">Home</a></li>
-                <li class="item"><a href="#work">Work</a></li>
-                <li class="item"><a href="#about">About</a></li>
-                <li class="item"><a href="#contact">Contact</a></li>
+
+    <main class="main content-width resFlex">
+      <div class="main__wrapper1">
+        <p class="main__pcText font-lg">
+          -Web designer <br>
+          and <br>
+          programmer-
+        </p>
+      </div>
+      <div class="main__wrapper2">
+        <img class="main__pcImg mb-lg" src="images/okami.jpg" alt="メイン画像">
+        <img class="main__spImg mb-lg" src="images/okami_mobile.jpg" alt="メイン画像">
+
+        <section class="main__work mb-lg content-width" id="works">
+          <h1 class="main__title font-lr mb-md">Works</h1>
+          <div class="main__webWorks">
+            <h2 class="main__subTitle mb-md font-lr font-md">Website</h2>
+            <h3 class="main__subTitle2 mb-sm font-md">Intermediate</h3>
+            <ul class="main__ul mb-md">
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/Intermediate/sample1_1/index.html" target="_blank">模写1</a></li>
             </ul>
-        </button>
-        </nav>
-    </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> -->
-    <script src="main.js""></script>
-</body>
+            <h3 class="main__subTitle2 mb-sm font-md">Elementary</h3>
+            <ul class="main__ul mb-md">
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/elementary/sample5/index.html" target="_blank">模写5</a></li>
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/elementary/sample4/index.html" target="_blank">模写4</a></li>
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/elementary/sample3/index.html" target="_blank">模写3</a></li>
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/elementary/sample2/index.html" target="_blank">模写2</a></li>
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/elementary/sample1/index.html" target="_blank">模写1</a></li>
+            </ul>
+            <h3 class="main__subTitle2 mb-sm font-md">Beginner</h3>
+            <ul class="main__ul mb-md">
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/beginner/sample6/index.html" target="_blank">模写6</a></li>
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/beginner/sample5/index.html" target="_blank">模写5</a></li>
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/beginner/sample4/index.html" target="_blank">模写4</a></li>
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/beginner/sample3/index.html" target="_blank">模写3</a></li>
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/beginner/sample2/index.html" target="_blank">模写2</a></li>
+              <li class="main__li mb-sm"><a class="main__a mb-sm" href="works/beginner/sample1/index.html" target="_blank">模写1</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="main__about mb-lg content-width" id="about">
+          <h1 class="main__title font-lr mb-md">About</h1>
+          <p class="main__text font-md mb-sm">Mizuki Konishi</p>
+          <p class="main__text font-md">岡山県津山市出身。1991年生まれ。<br>
+            動物やテクノロジーが好きで、絵を描くのが趣味のWebデザイナー、プログラマー。
+          </p>
+        </section>
+
+        <section class="main__contact mb-lg content-width" id="contact">
+          <h1 class="main__title font-lr mb-md">Contact</h1>
+          <p class="main__text font-md mb-sm">お問い合わせ、ご相談などはこちらから</p>
+          <a class="main__text font-md" href="mailto:mizuki91722@gmail.com">mizuki91722@gmail.com</a>
+        </section>
+      </div>
+      <div class="main__box"></div>
+    </main>
+    <footer class="footer resFlex">
+      <div class="footer__box1"></div>
+      <div class="footer__box2">
+        <p class="footer__pcCopy">&copy; Mizuki Konishi</p>
+      </div>
+      <p class="footer__spCopy">&copy; Mizuki Konishi</p>
+      <div class="footer__box3"></div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
