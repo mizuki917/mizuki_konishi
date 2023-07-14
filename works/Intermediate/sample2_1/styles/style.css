@@ -1,0 +1,259 @@
+body {
+  font-family: "Helvetica Neu", "Arial", "Hiragino San", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  color: rgb(70, 70, 70);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .resFlex {
+    display: flex;
+  }
+}
+
+.content-width {
+  padding: 0 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mb-sm {
+  margin-bottom: 10px !important;
+}
+
+.mb-md {
+  margin-bottom: 27px !important;
+}
+
+.mb-lr {
+  margin-bottom: 27px !important;
+}
+@media screen and (min-width: 768px) {
+  .mb-lr {
+    margin-bottom: 80px !important;
+  }
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.font-sm {
+  font-size: 13px;
+}
+
+.font-md {
+  font-size: 14px;
+}
+
+.font-lr {
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .font-lr {
+    font-size: 40px;
+  }
+}
+
+.font-lg {
+  font-size: 35px;
+}
+@media screen and (min-width: 768px) {
+  .font-lg {
+    font-size: 74px;
+    font-weight: bold;
+  }
+}
+
+.header__mainImg {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__nav {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+.header__li {
+  margin-left: 30px;
+  text-shadow: 2px 2px rgba(70, 70, 70, 0.5);
+}
+.header__a {
+  color: white;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+.header__a:hover {
+  color: rgb(227, 0, 0);
+}
+
+.main .img1 {
+  background-image: url(../images/menu.jpg);
+}
+.main .img2 {
+  background-image: url(../images/about.jpg);
+}
+.main .img3 {
+  background-image: url(../images/location.jpg);
+}
+.main__parallaxImg {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .main__parallaxImg {
+    display: block;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+}
+.main__img {
+  height: 100px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__titleWrap {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .main__titleWrap {
+    display: none;
+  }
+}
+.main__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.main__subTitle {
+  border-bottom: 5px solid rgb(227, 0, 0);
+  display: inline-block;
+}
+.main__subTWrap {
+  text-align: center;
+}
+.main__dl {
+  flex-wrap: wrap;
+}
+.main__dt {
+  width: 85%;
+  border-bottom: 1px dotted rgb(70, 70, 70);
+}
+.main__dd {
+  width: 15%;
+  text-align: right;
+}
+.main__text {
+  line-height: 28px;
+}
+.main__btn {
+  color: rgb(70, 70, 70);
+  margin: 0 auto;
+  width: 160px;
+  text-align: center;
+  padding: 15px 0;
+  display: block;
+  position: relative;
+}
+.main__btn::before, .main__btn::after {
+  content: "";
+  position: absolute;
+  border: solid rgb(227, 0, 0);
+  width: 30px;
+  height: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.main__btn::before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+.main__btn::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+}
+.main__btn:hover::before, .main__btn:hover::after {
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  border-color: rgb(227, 0, 0);
+}
+.main__map {
+  width: 100%;
+  height: 400px;
+  filter: grayscale(100%);
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .main__menuInner {
+    width: 50%;
+    justify-content: space-between;
+  }
+  .main__menuInner:first-child {
+    border-right: 1px solid rgb(70, 70, 70);
+    padding-right: 45px;
+    padding-left: 18px;
+  }
+  .main__menuInner:last-child {
+    padding-left: 45px;
+    padding-right: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main .mb {
+    margin-bottom: 53px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__abWrapper {
+    justify-content: space-between;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__abInner {
+    width: 48%;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 110px;
+  }
+}/*# sourceMappingURL=style.css.map */

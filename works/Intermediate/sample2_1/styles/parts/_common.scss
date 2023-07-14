@@ -1,0 +1,77 @@
+@use "../globals" as *;
+
+body {
+  font-family: 'Helvetica Neu', 'Arial', 'Hiragino San', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+  color: $cBlack;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.resFlex {
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.content-width {
+  padding: 0 16px;
+  max-width: $contentMaxWidth;
+  margin: 0 auto;
+}
+
+// margin-bottom
+.mb-sm {
+  margin-bottom: 10px !important;
+}
+
+.mb-md {
+  margin-bottom: 27px !important;
+}
+
+.mb-lr {
+  margin-bottom: 27px !important;
+  @include mq(md) {
+    margin-bottom: 80px !important;
+  }
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+// font
+.font-sm {
+  font-size: 13px;
+}
+.font-md {
+  font-size: 14px;
+}
+.font-lr {
+  font-size: 20px;
+  @include mq(md) {
+    font-size: 40px;
+  }
+}
+.font-lg {
+  font-size: 35px;
+  @include mq(md) {
+    font-size: 74px;
+    font-weight: bold;
+  }
+}
+
