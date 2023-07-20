@@ -6,10 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.toggle('menuOpen');
     }
     function menuClouse() {
-        if(body.classList.contains('menuOpen')) {
-            body.classList.remove('menuOpen');
-        }
-       
+        body.classList.remove('menuOpen');
     }
     hMenu.addEventListener('click', menuToggle);
     curtain.addEventListener('click', menuClouse);
