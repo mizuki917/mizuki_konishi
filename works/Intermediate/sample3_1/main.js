@@ -1,10 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const hMenu = document.querySelector('.header__hMenu');
     const body = document.querySelector('body');
-    // const header = document.querySelector('.header');
+    const curtain = document.querySelector('.curtain');
     function menuToggle() {
         body.classList.toggle('menuOpen');
     }
+    function menuClouse() {
+        if(body.classList.contains('menuOpen')) {
+            body.classList.remove('menuOpen');
+        }
+       
+    }
     hMenu.addEventListener('click', menuToggle);
+    curtain.addEventListener('click', menuClouse);
     
 })
