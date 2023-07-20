@@ -1,0 +1,369 @@
+body {
+  font-family: "Noto Sans", "Noto Sans JP", "Source Serif Pro", sans-serif;
+  color: rgb(70, 70, 70);
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (min-width: 900px) {
+  .resFlex {
+    display: flex;
+  }
+}
+
+.content-width {
+  padding: 0 40px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.mb-sm {
+  margin-bottom: 10px !important;
+}
+
+.mb-md {
+  margin-bottom: 27px !important;
+}
+
+.mb-lr {
+  margin-bottom: 60px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.font-sm {
+  font-size: 12px;
+}
+
+.font-md {
+  font-size: 13px;
+}
+
+.font-lr {
+  font-size: 15px;
+}
+
+.font-lg {
+  font-size: 36px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  z-index: 10;
+  height: 80px;
+  margin: 0;
+}
+.header .hMenuOpen {
+  position: absolute;
+  top: 33px;
+  left: 50px;
+  opacity: 0;
+}
+.header .hMenuOpen__main {
+  padding-left: 0;
+  transform: translateX(-300px);
+  transition: all 0.3s;
+}
+.header .hMenuOpen__link {
+  color: white;
+}
+.header__wrapper {
+  justify-content: space-between;
+}
+.header__logo {
+  width: 180px;
+  height: 40px;
+  margin-top: 20px;
+}
+.header__hMenu {
+  width: 30px;
+  margin-top: 35px;
+}
+.header__hMenu > span {
+  width: 30px;
+  height: 2px;
+  background-color: rgb(70, 70, 70);
+  display: block;
+  margin-bottom: 6px;
+  transition: all 0.6s;
+}
+
+.main__wrapper1 {
+  display: grid;
+  grid-template: ".....    ..... .....   " 80px "proItem1 ..... proItem2" auto ".....    ..... .....   " 40px "proItem3 ..... proItem4" auto ".....    ..... .....   " 40px "proItem5 ..... proItem6" auto ".....    ..... .....  " 40px "proItem7 ..... proItem8" auto ".....    ..... .....  " 40px " VM       VM    VM    " 30px/47% 6% 47%;
+}
+@media screen and (min-width: 900px) {
+  .main__wrapper1 {
+    grid-template: ".....    ..... .....    ..... .....    ..... .....   " 80px "proItem1 ..... proItem2 ..... proItem3 ..... proItem4" auto ".....    ..... .....    ..... .....    ..... .....   " 40px "proItem5 ..... proItem6 ..... proItem7 ..... proItem8" auto ".....    ..... .....    ..... .....    ..... .....   " 40px "VM       VM    VM       VM    VM       VM    VM      " 30px/23% 2.67% 23% 2.67% 23% 2.67% 23%;
+  }
+}
+.main__wrapper2 {
+  display: grid;
+  grid-template: ".....    ..... .....   " 80px "products  products products" 90px "proItem1 ..... proItem2" auto ".....    ..... .....   " 40px "proItem3 ..... proItem4" auto ".....    ..... .....   " 40px "proItem5 ..... proItem6" auto ".....    ..... .....  " 40px "proItem7 ..... proItem8" auto ".....    ..... .....  " 40px "proItem9 ..... proItem10" auto ".....    ..... .....  " 40px "proItem11 ..... proItem12" auto ".....    ..... .....  " 40px " countWrap countWrap countWrap" 30px/47% 6% 47%;
+}
+@media screen and (min-width: 900px) {
+  .main__wrapper2 {
+    grid-template: ".....    ..... .....    ..... .....    ..... .....   " 80px "products  products products products  products products products" 90px "proItem1 ..... proItem2 ..... proItem3 ..... proItem4" auto ".....    ..... .....    ..... .....    ..... .....   " 40px "proItem5 ..... proItem6 ..... proItem7 ..... proItem8" auto ".....    ..... .....    ..... .....    ..... .....   " 40px "proItem9 ..... proItem10 ..... proItem11 ..... proItem12" auto ".....    ..... .....    .....  .....   .....  ....." 40px "countWrap countWrap countWrap countWrap countWrap countWrap countWrap" 30px/23% 2.67% 23% 2.67% 23% 2.67% 23%;
+  }
+}
+.main__wrapper3 {
+  display: grid;
+  grid-template: ".....    ..... .....   " 80px "products  products products" 90px "proItem13 ..... proItem14" auto ".....    ..... .....   " 40px "proItem15 ..... proItem16" auto ".....    ..... .....  " 40px "countWrap countWrap countWrap" 30px/47% 6% 47%;
+}
+@media screen and (min-width: 900px) {
+  .main__wrapper3 {
+    grid-template: ".....    ..... .....    ..... .....    ..... .....   " 80px "products  products products products  products products products" 90px "proItem13 ..... proItem14 ..... proItem15 ..... proItem16" auto ".....    ..... .....    .....  .....   .....  ....." 40px "countWrap countWrap countWrap countWrap countWrap countWrap countWrap" 30px ".....    ..... .....    .....  .....   .....  ....." 70px/23% 2.67% 23% 2.67% 23% 2.67% 23%;
+  }
+}
+.main__proItem1 {
+  grid-area: proItem1;
+}
+.main__proItem2 {
+  grid-area: proItem2;
+}
+.main__proItem3 {
+  grid-area: proItem3;
+}
+.main__proItem4 {
+  grid-area: proItem4;
+}
+.main__proItem5 {
+  grid-area: proItem5;
+}
+.main__proItem6 {
+  grid-area: proItem6;
+}
+.main__proItem7 {
+  grid-area: proItem7;
+}
+.main__proItem8 {
+  grid-area: proItem8;
+}
+.main__proItem9 {
+  grid-area: proItem9;
+}
+.main__proItem10 {
+  grid-area: proItem10;
+}
+.main__proItem11 {
+  grid-area: proItem11;
+}
+.main__proItem12 {
+  grid-area: proItem12;
+}
+.main__proItem13 {
+  grid-area: proItem13;
+}
+.main__proItem14 {
+  grid-area: proItem14;
+}
+.main__proItem15 {
+  grid-area: proItem15;
+}
+.main__proItem16 {
+  grid-area: proItem16;
+}
+.main__products {
+  grid-area: products;
+  margin-top: 40px;
+}
+.main__countWrap {
+  grid-area: countWrap;
+  margin: 0 auto;
+}
+.main__1 {
+  margin-right: 40px;
+}
+.main__VM {
+  grid-area: VM;
+  text-align: center;
+}
+.main__proTitle {
+  padding-top: 80px;
+  display: block;
+}
+.main__proImg {
+  padding-top: 80px;
+}
+
+.item__proTitle {
+  padding-top: 120px;
+}
+.item__dl {
+  flex-wrap: wrap;
+}
+.item__dt {
+  width: 30%;
+}
+.item__dd {
+  width: 70%;
+}
+.item__BTP {
+  text-align: center;
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .item__wrapper {
+    display: flex;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .item__proImg {
+    width: 400px;
+    margin-right: 62px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .item__inner {
+    width: 348px;
+  }
+}
+
+.about {
+  padding-bottom: 25%;
+}
+@media screen and (min-width: 900px) {
+  .about {
+    padding-bottom: 190px;
+  }
+}
+.about__title {
+  padding-top: 120px;
+  font-weight: 300;
+}
+.about__text {
+  max-width: 600px;
+}
+
+.company {
+  padding-top: 120px;
+}
+@media screen and (min-width: 900px) {
+  .company__dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+  }
+}
+.company__dt {
+  padding: 20px 10px 10px 10px;
+}
+@media screen and (min-width: 900px) {
+  .company__dt {
+    border-bottom: 1px solid #888887;
+    width: 30%;
+  }
+  .company__dt:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+.company__dd {
+  padding: 0 10px 20px 10px;
+  border-bottom: 1px solid #888887;
+}
+.company__dd:nth-of-type(6), .company__dd:nth-of-type(7), .company__dd:nth-of-type(8) {
+  border-bottom: none;
+  padding: 0 10px 0 10px;
+}
+@media screen and (min-width: 900px) {
+  .company__dd {
+    width: 70%;
+    padding: 20px 10px 20px 10px;
+  }
+  .company__dd:nth-of-type(6) {
+    padding: 20px 10px 0 10px;
+  }
+  .company__dd:nth-of-type(7), .company__dd:nth-of-type(8) {
+    padding: 0 10px 0 31.7%;
+  }
+}
+.company__map {
+  width: 100%;
+  height: 300px;
+  filter: grayscale(100%);
+}
+@media screen and (min-width: 900px) {
+  .company__map {
+    width: 600px;
+  }
+}
+
+.footer {
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 900px) {
+  .footer {
+    margin-top: 110px;
+  }
+}
+.footer__ul {
+  padding: 0;
+}
+.footer__li {
+  margin-right: 30px;
+}
+.footer__copy {
+  font-size: 11px;
+}
+
+body.menuOpen {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+body.menuOpen .hMenuOpen {
+  opacity: 1;
+}
+body.menuOpen .hMenuOpen__main {
+  transform: none;
+}
+body.menuOpen .header {
+  background-color: rgba(0, 0, 0, 0.756);
+  height: 100%;
+  min-width: 100%;
+}
+@media screen and (min-width: 1360px) {
+  body.menuOpen .header__hMenu {
+    transform: translateX(-33px);
+  }
+}
+body.menuOpen .header__hMenu > span {
+  background-color: white;
+}
+body.menuOpen .header__hMenu > span:first-child {
+  transform: rotateZ(-45deg) translateY(5px);
+}
+body.menuOpen .header__hMenu > span:last-child {
+  transform: rotateZ(45deg) translateY(-5px);
+}/*# sourceMappingURL=style.css.map */

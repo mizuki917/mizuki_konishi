@@ -1,0 +1,327 @@
+@use "globals" as *;
+@use "parts/common" as *;
+
+// header 
+.header {
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $cWhite;
+    z-index: 10;
+    height: 80px;
+    margin: 0;
+    
+    .hMenuOpen {
+        position: absolute;
+        top: 33px;
+        left: 50px;
+        opacity: 0;
+        &__main {
+            padding-left: 0;
+            transform: translateX(-300px);
+            transition: all 0.3s;
+        }
+        &__link {
+            color: $cWhite;
+        }
+    }
+    &__wrapper {
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 180px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    &__hMenu {
+        width: 30px;
+        margin-top: 35px;
+        & > span {
+            width: 30px;
+            height: 2px;
+            background-color: $cBlack;
+            display: block;
+            margin-bottom: 6px;
+            transition: all 0.6s;
+        }
+    }
+}
+
+// main 
+.main {
+    &__wrapper1 {
+        display: grid;
+        grid-template: 
+        ".....    ..... .....   " 80px
+        "proItem1 ..... proItem2" auto
+        ".....    ..... .....   " 40px
+        "proItem3 ..... proItem4" auto
+        ".....    ..... .....   " 40px 
+        "proItem5 ..... proItem6" auto
+        ".....    ..... .....  " 40px
+        "proItem7 ..... proItem8" auto
+        ".....    ..... .....  " 40px
+        " VM       VM    VM    " 30px/
+        47%    6%  47%  ; 
+
+        @include mq(md) {
+            grid-template: 
+            ".....    ..... .....    ..... .....    ..... .....   "  80px
+            "proItem1 ..... proItem2 ..... proItem3 ..... proItem4"  auto
+            ".....    ..... .....    ..... .....    ..... .....   "  40px
+            "proItem5 ..... proItem6 ..... proItem7 ..... proItem8"  auto
+            ".....    ..... .....    ..... .....    ..... .....   "  40px
+            "VM       VM    VM       VM    VM       VM    VM      "  30px/
+            23%       2.67%    23%       2.67%   23%       2.67%   23%;
+        }
+    }
+
+    &__wrapper2 {
+        display: grid;
+        grid-template: 
+        ".....    ..... .....   " 80px
+        "products  products products" 90px
+        "proItem1 ..... proItem2" auto
+        ".....    ..... .....   " 40px
+        "proItem3 ..... proItem4" auto
+        ".....    ..... .....   " 40px 
+        "proItem5 ..... proItem6" auto
+        ".....    ..... .....  " 40px
+        "proItem7 ..... proItem8" auto
+        ".....    ..... .....  " 40px
+        "proItem9 ..... proItem10" auto
+        ".....    ..... .....  " 40px
+        "proItem11 ..... proItem12" auto
+        ".....    ..... .....  " 40px
+        " countWrap countWrap countWrap" 30px/
+        47%    6%  47%  ; 
+
+        @include mq(md) {
+            grid-template: 
+            ".....    ..... .....    ..... .....    ..... .....   "  80px
+            "products  products products products  products products products" 90px
+            "proItem1 ..... proItem2 ..... proItem3 ..... proItem4"  auto
+            ".....    ..... .....    ..... .....    ..... .....   "  40px
+            "proItem5 ..... proItem6 ..... proItem7 ..... proItem8"  auto
+            ".....    ..... .....    ..... .....    ..... .....   "  40px
+            "proItem9 ..... proItem10 ..... proItem11 ..... proItem12" auto
+            ".....    ..... .....    .....  .....   .....  ....." 40px
+            "countWrap countWrap countWrap countWrap countWrap countWrap countWrap" 30px/
+            23%       2.67%    23%       2.67%   23%       2.67%   23%;
+        }
+    }
+
+    &__wrapper3 {
+        display: grid;
+        grid-template: 
+        ".....    ..... .....   " 80px
+        "products  products products" 90px
+        "proItem13 ..... proItem14" auto
+        ".....    ..... .....   " 40px
+        "proItem15 ..... proItem16" auto
+        ".....    ..... .....  " 40px
+        "countWrap countWrap countWrap" 30px/
+        47%    6%  47%  ; 
+
+        @include mq(md) {
+            grid-template: 
+            ".....    ..... .....    ..... .....    ..... .....   "  80px
+            "products  products products products  products products products" 90px
+            "proItem13 ..... proItem14 ..... proItem15 ..... proItem16"  auto
+            ".....    ..... .....    .....  .....   .....  ....." 40px
+            "countWrap countWrap countWrap countWrap countWrap countWrap countWrap" 30px
+            ".....    ..... .....    .....  .....   .....  ....." 70px/
+            23%       2.67%    23%       2.67%   23%       2.67%   23%;
+        }
+    }
+        
+    
+    
+
+    @for $i from 1 through 16 {
+        &__proItem#{$i} {
+            grid-area: proItem#{$i};
+        }
+    }
+    &__products {
+        grid-area: products;
+        margin-top: 40px;
+    }
+
+    &__countWrap {
+        grid-area: countWrap;
+        margin: 0 auto;
+    }
+
+    &__1 {
+        margin-right: 40px;
+    }
+
+    &__VM {
+        grid-area: VM;
+        text-align: center;
+    }
+    
+    &__proTitle {
+        padding-top: 80px;
+        display: block;
+    }
+    &__proImg {
+        padding-top: 80px;
+    }
+}
+
+.item {
+    &__proTitle {
+        padding-top: 120px;
+    }
+    &__dl {
+        flex-wrap: wrap;
+    }
+    &__dt {
+        width: 30%;
+    }
+    &__dd {
+        width: 70%;
+    }
+    &__BTP {
+        text-align: center;
+        display: block;
+    }
+    &__wrapper {
+        @include mq(md) {
+            display: flex;
+            margin-bottom: 30px;
+        }
+    }
+    &__proImg {
+        @include mq(md) {
+            width: 400px;
+            margin-right: 62px;
+        }
+    }
+    &__inner {
+        @include mq(md) {
+            width: 348px;
+        }
+    }
+}
+.about {
+    padding-bottom: 25%;
+    @include mq(md) {
+        padding-bottom: 190px;
+    }
+    &__title {
+        padding-top: 120px;
+        font-weight: 300;
+    }
+    &__text {
+        max-width: 600px;
+    }
+}
+.company {
+    padding-top: 120px;
+    &__dl {
+        @include mq(md) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+        }
+    }
+    &__dt {
+        padding: 20px 10px 10px 10px;
+        @include mq(md) {
+            border-bottom:  1px solid $cGray;
+            width: 30%;
+            &:last-of-type {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+    }
+    &__dd {
+        padding: 0 10px 20px 10px ;
+        border-bottom: 1px solid $cGray;
+        &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8) {
+            border-bottom: none;
+            padding: 0 10px 0 10px ;
+        }
+        @include mq(md) {
+            width: 70%;
+            padding: 20px 10px 20px 10px;
+            &:nth-of-type(6) {
+                padding: 20px 10px 0 10px;
+            }
+            &:nth-of-type(7), &:nth-of-type(8) {
+                padding: 0 10px 0 31.7%;
+            }
+        }
+    }
+    &__map {
+        width: 100%;
+        height: 300px;
+        filter: grayscale(100%);
+        @include mq(md) {
+            width: 600px;
+        }
+    }
+}
+
+// footer 
+.footer {
+    padding-bottom: 20px;
+    justify-content: space-between;
+    @include mq(md) {
+        margin-top: 110px;
+    }
+    &__ul {
+        padding: 0;
+    }
+    &__li {
+        margin-right: 30px;
+    }
+    &__copy {
+        font-size: 11px;
+    }
+}
+
+ body.menuOpen {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    // visibility: visible;
+    // cursor: pointer;
+     
+    .hMenuOpen {
+        opacity: 1;
+        &__main {
+            transform: none;
+        }
+    }
+    .header {
+        background-color: $cMenuOpen;
+        height: 100%;
+        min-width: 100%;
+        &__hMenu {
+            @include mq(lg) {
+                transform: translateX(-33px);
+            }
+            
+            & > span {
+                background-color: $cWhite;
+                &:first-child {
+                    transform: rotateZ(-45deg) translateY(5px);
+                }
+                &:last-child {
+                    transform: rotateZ(45deg) translateY(-5px) ;
+                }
+                
+            }
+        }
+    }
+    
+}
+
+
