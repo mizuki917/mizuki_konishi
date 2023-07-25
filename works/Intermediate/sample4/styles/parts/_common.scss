@@ -1,0 +1,105 @@
+@use "../globals" as *;
+
+body {
+  font-family: '遊ゴシック', sans-serif;
+  color: $cBlack;
+  letter-spacing: 1px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $cBlack;
+}
+
+.flex {
+  display: flex;
+}
+.resFlex {
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.order1 {
+  @include mq(md) {
+    order: 1;
+  }
+}
+.order2 {
+  @include mq(md) {
+    order: 2;
+  }
+}
+
+.content-width {
+  width: 94%;
+  max-width: $contentMaxWidth;
+  margin: 0 auto;
+  @include mq(md) {
+    width: 93.5%;
+  }
+}
+
+// margin-bottom
+.mb-sm {
+  margin-bottom: 10px !important;
+}
+
+.mb-md {
+  margin-bottom: 20px !important;
+}
+
+.mb-lr {
+  margin-bottom: 40px !important;
+  @include mq(md) {
+    margin-bottom: 80px !important;
+  } 
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+  @include mq(md) {
+    margin-bottom: 100px !important;
+  }
+}
+
+// font
+.font-hsm {
+  font-size: 12px;
+}
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 18px;
+}
+.font-lr {
+  font-size: 25px;
+  @include mq(md) {
+    font-size: 28px;
+  }
+}
+.font-lg {
+  font-size: 28px;
+  @include mq(md) {
+    font-size: 36px;
+  }
+}
+
+.font-heroHead {
+  font-size: 28px;
+  @include mq(md) {
+    font-size: 46px;
+    text-shadow: 0 5px 5px $cWhite;
+  }
+}
+
