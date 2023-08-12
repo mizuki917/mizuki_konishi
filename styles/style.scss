@@ -19,6 +19,10 @@
     &__spLogo {
         width: 300px;
         margin: 50px auto;
+        
+    }
+    &__spLogo, &__spText {
+        transform: translateX(20px);
     }
     &__hMenu {
         display: block;
@@ -48,7 +52,6 @@
         text-align: center;
         justify-content: space-between;
         margin: 0 auto;
-        transform: translateX(20px);
         @include mq(md) {
             width: 33%;
             position: fixed;

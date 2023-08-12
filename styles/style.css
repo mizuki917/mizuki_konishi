@@ -91,6 +91,9 @@ a:hover {
   width: 300px;
   margin: 50px auto;
 }
+.header__spLogo, .header__spText {
+  transform: translateX(20px);
+}
 .header__hMenu {
   display: block;
   width: 45px;
@@ -117,7 +120,6 @@ a:hover {
   text-align: center;
   justify-content: space-between;
   margin: 0 auto;
-  transform: translateX(20px);
 }
 @media screen and (min-width: 900px) {
   .header__wrapper {
