@@ -48,6 +48,7 @@
         text-align: center;
         justify-content: space-between;
         margin: 0 auto;
+        transform: translateX(20px);
         @include mq(md) {
             width: 33%;
             position: fixed;
@@ -249,14 +250,14 @@ body.menuOpen {
                 background-color: $cWhite;
                 transition: all 0.3s;
                 &:first-child {
-                    transform: rotatez(-45deg) translateY(17px);
+                    transform: rotatez(-45deg) translate(-9px, 10px);
                     transition-delay: 30ms;
                 }
                 &:nth-child(2) {
                     transform: translateX(-18px) scale(0);
                 }
                 &:last-child {
-                    transform: rotateZ(45deg) translateY(-17px);
+                    transform: rotateZ(45deg) translate(-6px, -8px);
                     transition-delay: 60ms;
                 }
             }
@@ -265,11 +266,11 @@ body.menuOpen {
         &__hMenuUl {
             display: block;
             margin-top: 200px;
-            margin-left: 8%;
+            margin-left: 6%;
         }
         &__hMenuLi {
             color: $cWhite;
-            list-style: square;
+            list-style: none;
             border-bottom: 1px solid $cWhite;
         }
         &__hMenuA {
