@@ -1,10 +1,6 @@
 @use "globals" as *;
 @use "parts/common" as *;
 
-body {
-    min-width: 100%;
-}
-
 .gradation {
     background: linear-gradient(
         to bottom,

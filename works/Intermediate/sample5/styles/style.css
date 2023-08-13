@@ -1,6 +1,8 @@
 body {
   font-family: "Noto Sans", "Noto Sans JP", "Source Serif Pro", sans-serif;
   color: rgb(17, 17, 17);
+  position: relative;
+  height: auto;
 }
 
 img {
@@ -69,10 +71,6 @@ a {
 
 .font-lg {
   font-size: 36px;
-}
-
-body {
-  min-width: 100%;
 }
 
 .gradation {
