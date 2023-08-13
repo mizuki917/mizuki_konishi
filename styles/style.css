@@ -102,6 +102,7 @@ a:hover {
   height: 30px;
   background-color: transparent;
   cursor: pointer;
+  z-index: 10;
 }
 .header__hMenu > span {
   display: block;
