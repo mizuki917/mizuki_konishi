@@ -165,9 +165,11 @@
     }
     &__webWorks {
         width: 96%;
+        margin: 0 auto;
         border-bottom: 1px solid $cBlack;
         @include mq(md) {
             width: 90%;
+            margin: 0;
         }
     }
     &__subTitle2 {
@@ -175,6 +177,10 @@
         margin: 0 auto;
         padding-bottom: 5px;
         border-bottom: 1px solid $cBlack;
+        @extend .mb-lr;
+        &:nth-of-type(2), &:nth-of-type(3) {
+            margin-top: 110px;
+        }
     }
     
     &__text {
@@ -195,6 +201,37 @@
             transition: all 0.3s;
             animation: slide-left 1.4s;
         }
+    }
+    &__ul {
+        padding: 0;
+        @include mq(sm) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include mq(md) {
+            display: block;
+        }
+        @include mq(lg) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    &__li {
+        @extend .mb-lr;
+        @include mq(sm) {
+            flex-basis: 48%
+        }
+        @include mq(lg) {
+            flex-basis: 48%
+        }
+    }
+    &__workImg {
+        @extend .mb-sm;
+    }
+    &__workP {
+        margin-left: 30px;
     }
 }
 
