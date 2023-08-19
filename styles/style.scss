@@ -229,6 +229,7 @@
     }
     &__workImg {
         @extend .mb-sm;
+        border: 1px solid $cBlack;
     }
     &__workP {
         margin-left: 30px;

@@ -317,6 +317,9 @@ a:hover {
     flex-basis: 48%;
   }
 }
+.main__workImg {
+  border: 1px solid rgb(70, 70, 70);
+}
 .main__workP {
   margin-left: 30px;
 }
