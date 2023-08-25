@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>sample1</title>
+    
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js" defer></script>
+    <script src="scripts/libs/slider.js" defer></script>
+    
+    <script src="scripts/main.js" defer></script>
+
+  </head>
+  <body>
+    <div class="hMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="hMenu-open">
+      <nav class="hMenu-open__nav">
+        <ul class="hMenu-open__ul">
+          <li class="hMenu-open__li"><a href="#" class="hMenu-open__link">PICK UP</a></li>
+          <li class="hMenu-open__li"><a href="#" class="hMenu-open__link">FEATURE</a></li>
+          <li class="hMenu-open__li"><a href="#" class="hMenu-open__link">CONTACT</a></li>
+        </ul>
+      </nav>
+      <ul class="sns">
+        <li class="sns__li"><a href="https://twitter.com/home" target="_blank" class="sns__link">Twitter</a></li>
+        <li class="sns__li"><a href="https://ja-jp.facebook.com/" target="_blank" class="sns__link">facebook</a></li>
+        <li class="sns__li"><a href="https://www.instagram.com/" target="_blank" class="sns__link">instagram</a></li>
+      </ul>
+    </div>
+    <div class="mask"></div>
+    <header class="header">
+      <div class="header__wrapper">
+        <img class="header__logo" src="images/logo.svg" alt="ロゴ画像">
+      </div>
+    </header>
+    <main class="main">
+      <img class="main__img" src="images/feature1.jpg" alt="メインイメージ">
+      <section class="pickUp">
+        <h1 class="title">PICK UP</h1>
+        <!-- <div class="pickUp__wrapper">
+          <img class="pickUp__img" src="images/pickup1.jpg" alt="ピックアップ画像">
+          <img class="pickUp__img" src="images/pickup2.jpg" alt="ピックアップ画像">
+          <img class="pickUp__img" src="images/pickup3.jpg" alt="ピックアップ画像">
+          <img class="pickUp__img" src="images/pickup4.jpg" alt="ピックアップ画像">
+          <img class="pickUp__img" src="images/pickup5.jpg" alt="ピックアップ画像">
+        </div> -->
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup1.jpg" alt="ピックアップ画像"></div>
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup2.jpg" alt="ピックアップ画像"></div>
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup3.jpg" alt="ピックアップ画像"></div>
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup4.jpg" alt="ピックアップ画像"></div>
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup5.jpg" alt="ピックアップ画像"></div>
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup1.jpg" alt="ピックアップ画像"></div>
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup2.jpg" alt="ピックアップ画像"></div>
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup3.jpg" alt="ピックアップ画像"></div>
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup4.jpg" alt="ピックアップ画像"></div>
+            <div class="swiper-slide"><img class="pickUp__img" src="images/pickup5.jpg" alt="ピックアップ画像"></div>
+          </div>
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </section>
+      <section class="feature">
+        <h1 class="title">FEATURE</h1>
+        <div class="feature__wrapper">
+          <div class="feature__inner">
+            <img class="feature__img" src="images/feature1.jpg" alt="フィーチャー画像">
+            <div class="feature__inInner">
+              <p class="feature__category">category</p>
+              <p class="feature__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="feature__date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="feature__inner">
+            <img class="feature__img" src="images/feature2.jpg" alt="フィーチャー画像">
+            <div class="feature__inInner">
+              <p class="feature__category">category</p>
+              <p class="feature__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="feature__date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="feature__inner">
+            <img class="feature__img" src="images/feature3.jpg" alt="フィーチャー画像">
+            <div class="feature__inInner">
+              <p class="feature__category">category</p>
+              <p class="feature__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="feature__date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="feature__inner">
+            <img class="feature__img" src="images/feature4.jpg" alt="フィーチャー画像">
+            <div class="feature__inInner">
+              <p class="feature__category">category</p>
+              <p class="feature__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="feature__date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="feature__inner">
+            <img class="feature__img" src="images/feature5.jpg" alt="フィーチャー画像">
+            <div class="feature__inInner">
+              <p class="feature__category">category</p>
+              <p class="feature__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="feature__date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="feature__inner">
+            <img class="feature__img" src="images/feature6.jpg" alt="フィーチャー画像">
+            <div class="feature__inInner">
+              <p class="feature__category">category</p>
+              <p class="feature__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="feature__date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="feature__inner">
+            <img class="feature__img" src="images/feature7.jpg" alt="フィーチャー画像">
+            <div class="feature__inInner">
+              <p class="feature__category">category</p>
+              <p class="feature__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="feature__date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="feature__inner">
+            <img class="feature__img" src="images/feature8.jpg" alt="フィーチャー画像">
+            <div class="feature__inInner">
+              <p class="feature__category">category</p>
+              <p class="feature__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="feature__date">XXXX.XX.XX</p>
+            </div>
+          </div>
+          <div class="feature__inner">
+            <img class="feature__img" src="images/feature9.jpg" alt="フィーチャー画像">
+            <div class="feature__inInner">
+              <p class="feature__category">category</p>
+              <p class="feature__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p class="feature__date">XXXX.XX.XX</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h1 class="title">CONTACT</h1>
+        <div class="contact__wrapper">
+          <div class="contact__inner">
+            <p class="contact__text">テキストテキストテキスト</p>
+            <p class="contact__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="contact__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <div class="contact__inner">
+            <form action="">
+              <label class="contact__label" for="name">Name:</label>
+              <input class="contact__input input" type="text" id="name">
+              <label class="contact__label" for="mail">Mail:</label>
+              <input class="contact__input input" type="email" id="mail">
+              <label class="contact__label" for="message">Message:</label>
+              <textarea class="contact__input text" name="message" id="message" cols="30" rows="10"></textarea>
+              <a class="contact__btn" href="#">SEND</a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copy">&copy; Sneakers</p>
+    </footer>
+  </body>
+</html>

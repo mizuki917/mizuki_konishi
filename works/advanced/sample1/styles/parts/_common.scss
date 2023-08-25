@@ -1,0 +1,122 @@
+@use "../globals" as *;
+
+html {
+  height: auto;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  height: auto;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.title {
+  text-align: center;
+  @extend .mb-sm;
+  @include mq(hsm) {
+    font-size: 2.3em;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-md {
+  margin-bottom: 30px !important;
+}
+
+.mb-lr {
+  margin-bottom: 60px !important;
+}
+
+.mb-lg {
+  margin-bottom: 100px !important;
+
+  // @include mq(md) {
+  //   margin-bottom: 150px !important;
+  // }
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+
+  @include mq(md) {
+    padding-bottom: 150px !important;
+  }
+}
+
+.content-width {
+  width: 94%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+  @include mq(sm) {
+    width: 96%;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(sm) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.purple {
+  color: $cWineRed;
+}
+
+// font
+.font-sm {
+  font-size: 12px;
+
+  // @include mq(md) {
+  //   font-size: 16px;
+  // }
+}
+.font-md {
+  font-size: 15px;
+
+  // @include mq(md) {
+  //   font-size: 19px;
+  // }
+}
+.font-lr {
+  font-size: 17px;
+
+  // @include mq(md) {
+  //   font-size: 23px;
+  // }
+}
+.font-lg {
+  font-size: 25px;
+
+  // @include mq(md) {
+  //   font-size: 36px;
+  // }
+}
+
+// .main-title {
+//   @extend .font-lg;
+//   font-weight: 600;
+//   margin-bottom: 0;
+//   display: block;
+// }
+
+// .sub-title {
+//   @extend .font-sm;
+//   @extend .mb-sm;
+//   color: $cSubTitle;
+// }
