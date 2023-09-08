@@ -1,0 +1,368 @@
+@use "../globals" as *;
+@use "../parts/common" as *;
+html {
+  scroll-behavior: smooth;
+}
+
+body.opa1 {
+  .titleMenu {
+    opacity: 1;
+  }
+}
+.titleMenu {
+  z-index: 20;
+  position: fixed;
+  padding:  25px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s;
+  opacity: 0;
+  &__logo {
+    width: 150px;
+  }
+  &__hMenu {
+    margin-top: 5px;
+    cursor: pointer;
+    & > span {
+      transition: all 0.5s;
+      margin-bottom: 9px;
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: $cWhite;
+    }
+    
+  }
+}
+
+
+.menu {
+  width: 100%;
+  z-index: 10;
+  background-color: $cBlack;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  height: 300px;
+  display: block;
+  position: fixed;;
+  margin: 0 auto;
+  inset: 0;
+  transform: translateY(-120%);
+  transition: all 0.6s;
+  &__ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+  }
+  &__li {
+    margin-bottom: 20px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $cWhite;
+  }
+}
+
+body.open {
+  
+  .titleMenu__hMenu {
+    & > span {
+      &:first-child {
+        transform: rotate(-45deg) translate(-10px, 10px);
+      }
+      &:nth-child(2) {
+        transform: translateX(-18px) scale(0);
+      }
+      &:last-child {
+        transform: rotate(45deg) translate(-6px, -5px);
+      }
+    }
+  }
+  .menu {
+    // display: block;
+    transform: translateY(0);
+  }
+  
+}
+
+.header {
+  @extend .mb-lr;
+  .mv {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    @extend .mb-lr;
+    justify-content: center;
+    overflow: hidden;
+    &__img {
+      height: 100vh;
+      object-fit: cover;
+      flex-shrink: 0;
+      width: 33.3333%;
+      margin: auto;
+      inset: 0;
+      
+      // &:first-child, &:last-child {
+      //   display: none;
+      //   @include mq(lg) {
+      //     display: block;
+      //   }
+      // }
+    }
+    // .img1 {
+    //   background-image: url("../../images/mainvisual1.jpg");
+    // }
+    // .img2 {
+    //   background-image: url("../../images/mainvisual2.jpg");
+    // }
+    // .img3 {
+    //   background-image: url("../../images/mainvisual3.jpg");
+    // }
+  }
+
+  &__title {
+    @extend .head-title;
+    & > span {
+      display: block;
+      @include mq(lg) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.main {
+  position: relative;
+  
+  .info {
+    @extend .content-width;
+    &__strong {
+      font-weight: 500;
+      @extend .font-lr;
+      @extend .mb-sm;
+    }
+
+    &__p {
+      @extend .font-md;
+      @extend .mb-sm;
+    }
+    .fontB {
+      margin-bottom: 0 !important;
+      @include mq(lg) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .gallery {
+    @extend .content-width;
+    .sec-title {
+      margin-top: 88px;
+      @include mq(lg) {
+        margin-top: 154px;
+      }
+    }
+    &__img {
+      width: 100%;
+      height: auto;
+      @extend .mb-md;
+      @include mq(lg) {
+        width: 48%;
+      }
+      &:nth-child(odd) {
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
+    &__img:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+  .access {
+    z-index: 20;
+    padding-top: 287px;
+    padding-bottom: 280px;
+    @include mq(lg) {
+        padding-top: 493px;
+        padding-bottom: 480px;
+      }
+    .bgi {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      transition: all 0.3s;
+      object-fit: cover;
+      display: none;
+      z-index: -10;
+      
+      
+    }
+    &__subTitle {
+      font-size: 28px;
+      font-weight: 600;
+      @extend .mb-sm;
+    }
+    &__p {
+      @extend .mb-sm;
+      font-size: 16px;
+    }
+    &__btn {
+      border: 1px solid $cWhite;
+      color: $cWhite;
+      text-decoration: none;
+      display: block;
+      width: 270px;
+      height: 51px;
+      line-height: 51px;
+      margin: 0 auto;
+      &:hover {
+        background-color: $cBlack;
+      }
+    }
+  }
+
+  .access.backImg {
+    .access__bgi {
+      display: block;
+    }
+  }
+  .contact {
+    @extend .content-width;
+    padding-bottom: 280px;
+    &__btn {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 81px;
+      line-height: 81px;
+      border: 1px solid $cGray;
+      margin: 0 auto;
+      color: $cWhite;
+      text-decoration: none;
+      transition: all 0.3s;
+      @extend .mb-sm;
+      @include mq(lg) {
+        width: 400px;
+      }
+      &:hover {
+        color: $cGray;
+        border: 1px solid $cHovGray;
+        &::before {
+          transform: translateX(10px);
+          background-color: $cGray;
+        }
+        &::after {
+          transform: rotate(30deg) translate(10px, -5px);
+          background-color: $cGray;
+        }
+      }
+      &::before {
+        @include mq(lg) {
+          content: '';
+          transition: all 0.3s;
+          display: block;
+          height: 1px;
+          background-color: $cWhite;
+          position: absolute;
+          width: 120px;
+          top: 58%;
+          right: -10%;
+        }
+      }
+      &::after {
+        @include mq(lg) {
+          content: '';
+          transition: all 0.3s;
+          display: block;
+          height: 1px;
+          background-color: $cWhite;
+          position: absolute;
+          width: 15px;
+          top: 53%;
+          right: -10%;
+          transform: rotate(30deg);
+        }
+      }
+    }
+  }
+  
+}
+
+.boxLink {
+  position: fixed;
+  top: 60%;
+  opacity: 0;
+  right: -500px;
+  transform: rotate(-90deg);
+  transition: all 1s;
+  &__link {
+    cursor: pointer;
+    color: $cWhite;
+    border-top: 1px solid $cWhite;
+    border-left: 1px solid $cWhite;
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    text-decoration: none;
+    &:last-child {
+      border-right: 1px solid $cWhite;
+    }
+    &:hover {
+      color: $cGray;
+    }
+  }
+}
+
+.boxLink.view {
+  @include mq(md) {
+    opacity: 1;
+    right: -145px;
+    z-index: 10;
+  }
+}
+
+
+.footer {
+  border-top: 1px solid $cWhite;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 80px 30px 40px;
+  @extend .font-sm;
+  @include mq(lg) {
+    padding: 100px 30px 10px;
+  }
+  &__inner {
+    @extend .mb-md;
+    &:last-child {
+      @extend .flex;
+      @include mq(lg) {
+        justify-content: space-between;
+      }
+      .footer__inInner {
+        display: flex;
+        .footer__p {
+          margin-right: 40px;
+          @include mq(lg) {
+            margin-right: 0;
+            margin-left: 30px;
+          }
+        }
+      }
+      
+    }
+  }
+  &__ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    @extend .mb-md;
+  }
+  &__li {
+    margin-right: 18px;
+  }
+}

@@ -1,0 +1,115 @@
+@use "../globals" as *;
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: $cBlack;
+  color: $cWhite;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.mb-sm {
+  margin-bottom: 28px !important;
+  @include mq(lg) {
+    margin-bottom: 30px !important;
+  }
+}
+
+.mb-md {
+  margin-bottom: 52px !important;
+  @include mq(md) {
+    margin-bottom: 55px !important;
+  }
+}
+
+.mb-lr {
+  margin-bottom: 60px !important;
+  @include mq(lg) {
+    margin-bottom: 120px !important;
+  }
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+
+  @include mq(lg) {
+    margin-bottom: 150px !important;
+  }
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+
+  @include mq(lg) {
+    padding-bottom: 150px !important;
+  }
+}
+
+.content-width {
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(lg) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+// font
+.font-sm {
+  font-size: 12px;
+
+  // @include mq(lg) {
+  //   font-size: 16px;
+  // }
+}
+.font-md {
+  font-size: 16px;
+
+  @include mq(lg) {
+    font-size: 18px;
+  }
+}
+.font-lr {
+  font-size: 32px;
+
+  @include mq(lg) {
+    font-size: 60px;
+  }
+}
+.font-lg {
+  font-size: 48px;
+
+  @include mq(lg) {
+    font-size: 100px;
+  }
+}
+
+.head-title {
+  @extend .font-lg;
+  font-weight: 500;
+}
+
+.sec-title {
+  @extend .font-lr;
+  @extend .mb-md;
+  font-weight: 400;
+  border-bottom: 1px solid $cWhite;
+  display: inline-block;
+}
